@@ -25,7 +25,7 @@ public class FactoryPost extends TimerTask {
 		if (post == null) return; 
 		URL url = null;
 		try {
-			url = new URL("https://api.telegram.org/bot700982608:AAEptKtJPkags21mDfv4PQEmjO1hzp_CeTg/sendMessage?parse_mode=html&chat_id="+YmlResolver.getValue("post_channel")+"&text="+post.formatContent());
+			url = new URL("https://api.telegram.org/bot"+YmlResolver.getValue("token")+"/sendMessage?parse_mode=html&chat_id="+YmlResolver.getValue("post_channel")+"&text="+post.formatContent());
 		} catch (MalformedURLException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();

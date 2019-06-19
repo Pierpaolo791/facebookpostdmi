@@ -1,2 +1,3 @@
 file: "../file.txt"
 post_channel: "@dminews"
+token: ""
